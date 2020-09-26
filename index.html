@@ -4,181 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/fonts/ptsans/ptsans.css">
+    <link rel="stylesheet" href="./src/assets/slick/slick.css">
+    <link rel="stylesheet" href="./src/assets/slick/slick-theme.css">
     <title>Portfolio</title>
 </head>
 <body>
 
     <!-- start section header -->
-    <div class="header">
-            <div class="header__box">
-                <!-- start component header__item -->
-                <div class="header__item">
-                    <a href="#" class="header__item-link">профайл</a>
-                    <a href="#" class="header__item-link">навыки</a>
-                    <a href="#" class="header__item-link">портфолио</a>
-                    <a href="#" class="header__item-link">связь</a>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__container__box">
+                    <div class="header__box__item"><a href="#" class="header__item-link">Профайл</a></div>
+                    <div class="header__box__item"><a href="#" class="header__item-link">Навыки</a></div>
+                    <div class="header__box__item"><a href="#" class="header__item-link">Услуги</a></div>
+                    <div class="header__box__item"><a href="#" class="header__item-link">Связь</a></div>
                 </div>
-                <!-- stop component header__item -->
-            </div>
-        </div>
-    </div>
-    <!-- end section header -->
-
-    <!-- start section home -->
-    <div class="home">
-        <div class="container">
-            <div class="home__box">
-                <div class="home__item">
-                    <!-- start component logo -->
-                    <div class="logo">
-                        <img src="https://anton-sergeenkov.github.io/img/starter/go.jpg" alt="" class="logo__img">
-                    </div>
-                    <!-- start component logo -->
-                    <!-- start component title -->
-                    <div class="title">ПОРТФОЛИО
-                        <br>
-                        FRONTEND-РАЗРАБОТЧИКА
-                    </div>
-                    <!-- stop component title -->
-                </div>
-                <div class="home__item">
-                    <!-- start component scroll -->
-                    <div class="scroll">
-
-                    </div>
-                    <!-- stop component scroll -->
+                <div class="header__container__text">
+                    <p class="container__text__p">Василий Елкин.</p>
+                    <p class="container__text__p">Frontend-Разработчик.</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- stop section home -->
+        </header>
+    <!-- stop section header -->
 
     <!-- start section about -->
-     <div class="about">
-        <div class="container">
-            <h1>ОБО МНЕ</h1>
-            <div class="about__box">
-                <!-- start component about__item -->
-                <div class="about__item">
-                    <span>Образование</span>
+    <div class="about">
+        <div class="about__container">
+            <h1 class="about__title">О себе</h1>
+            <div class="about__container__box">
+                <div class="about__box__item">
+                    <img src="./src/assets/image/WvozHiaF9UQ.jpg" alt="" class="about__img">
                 </div>
-                <!-- stop component  about__item -->
-                <!-- start component about__item -->
-                <div class="about__item">
-                    <span>личные качества</span>
+                <div class="about__box__item">
+                    <h2 class="about__box__title">Frontend-Разработчик</h2>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minus dolorum deserun          
+                    </p>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minus dolorum deserun Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, quisquam asperiores non recusandae doloribus culpa       
+                    </p>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minus dolorum deserun Lorem      
+                    </p>
+                    <br>
+                    <a href="#" class="about__container__link">МОИ РАБОТЫ</a>
                 </div>
-                <!-- stop component about__item -->
-                <!-- start component about__item -->
-                <div class="about__item">
-                    <span>навыки</span>
-                </div>
-                <!-- stop component about__item -->
-                <!-- start component about__item -->
-                <div class="about__item">
-                    <span>карьера</span>
-                </div>
-                <!-- stop component about__item -->
             </div>
         </div>
     </div>
     <!-- stop section about -->
 
-     <!-- start section portfolio -->
-     <div class="portfolio">
-        <div class="container">
-            <h1>ПОРТФОЛИО</h1>
-            <div class="portfolio__box">
-                <!-- start component portfolio__item -->
-                <div class="portfolio__item">
-                    <span>сайт 1</span>
+    <!-- start section skills -->
+    <div class="skills">
+        <div class="skills__container">
+            <h1 class="about__title">Навыки</h1>
+            <div class="skills__container__box">
+                <div class="skills__box__item">
+                    <img src="./src/assets/image/html5.png" alt="" >
+                    <p class="slills__box__title">Html5</p>
                 </div>
-                <!-- stop component  portfolio__item -->
-                <!-- start component portfolio__item -->
-                <div class="portfolio__item">
-                    <span>сайт 2</span>
-                </div>
-                <!-- stop component  portfolio__item -->
-                <!-- start component portfolio__item -->
-                <div class="portfolio__item">
-                    <span>сайт 3</span>
-                </div>
-                <!-- stop component  portfolio__item -->
-                <!-- start component portfolio__item -->
-                <div class="portfolio__item">
-                    <span>сайт 4</span>
-                </div>
-                <!-- stop component  portfolio__item -->
+                <div class="skills__box__item">
+                    <img src="./src/assets/image/css-3.png" alt="">
+                    <p class="slills__box__title">css3</p>
+                </div> 
+                <div class="skills__box__item">
+                    <img src="./src/assets/image/js-file.png" alt="">
+                    <p class="slills__box__title">JavaScript</p>
+                </div> 
+                <div class="skills__box__item">
+                    <img src="./src/assets/image/bootstrap.png" alt="">
+                    <p class="slills__box__title">Bootstrap4</p>
+                </div>       
             </div>
         </div>
     </div>
-     <!-- stop section portfolio -->
+    <!-- stop section skills -->
 
-     <!-- start section summary -->
-     <div class="summary">
-        <div class="container">
-            <h1>РЕЗЮМЕ</h1>
-            <div class="summary__box">
-                <!-- start component summary__item -->
-                <div class="summary__item">
-                    <span>ссылка на резюме</span>
+    <!-- start section my-work -->
+    <div class="my-work">
+        <div class="my-work__container">
+            <h1 class="about__title">Мои работы</h1>
+            <div class="my-work__container__box">
+                <div class="my-work__box__item">
+                    <img src="./src/assets/image/WvozHiaF9UQ.jpg" alt="" width="300px" height="300px">
                 </div>
-                <!-- stop component  summary__item -->
+                <div class="my-work__box__item">
+                    <img src="./src/assets/image/WvozHiaF9UQ.jpg" alt="" width="300px" height="300px">
+                </div>
+                <div class="my-work__box__item">
+                    <img src="./src/assets/image/WvozHiaF9UQ.jpg" alt="" width="300px" height="300px">
+                </div>
             </div>
         </div>
     </div>
-     <!-- stop section summary -->
+    <!-- stop section my-work -->
 
-     <!-- start section contacts -->
-     <div class="contacts">
-        <div class="container">
-            <h1>КОНТАКТЫ</h1>
-            <div class="contact__box">
-                <!-- start component contacts__item -->
-                <div class="contact__item">
-                    <span>форма для заявки</span>
+    <!-- start section services -->
+    <div class="services">
+        <h1 class="about__title">Услуги</h1>
+        <div class="services__container">
+            <div class="services__container__box">
+                <div class="serices__box__item">
+                    <input type="text" placeholder="Ваше имя..." class="input__name">
                 </div>
-                <!-- stop component  contacts__item -->
-                <!-- start component contacts__item -->
-                <div class="contact__item">
-                    <span>ссылка на соц сети</span>
+                <div class="serices__box__item">
+                    <input type="text" placeholder="Ваше e-mail..." class="input__mail">
                 </div>
-                <!-- stop component  contacts__item -->
-                <!-- start component contacts__item -->
-                <div class="contact__item">
-                    <span>номер для TG</span>
+                <div class="serices__box__item">
+                    <textarea class="textarea__service" placeholder="Ваше сообщение..."></textarea>
                 </div>
-                <!-- stop component  contacts__item -->
+                <a href="#" class="service__btn">Заказать</a>
             </div>
         </div>
     </div>
-      <!-- stop section contacts -->
+    <!-- stop section services -->
 
-      <!-- start section footer -->
-      <div class="footer">
-        <div class="container">
-            <h1>ПОДВАЛ</h1>
-            <div class="footer__box">
-                <!-- start component footer__item -->
-                <div class="footer__item">
-                    <span>лого</span>
-                </div>
-                <!-- stop component  footer__item -->
-                <!-- start component footer__item -->
-                <div class="footer__item">
-                    <span>контакт</span>
-                </div>
-                <!-- stop component  footer__item -->
-                <!-- start component footer__item -->
-                <div class="footer__item">
-                    <span>соц сети</span>
-                </div>
-                <!-- stop component  footer__item -->
+    <!-- start section footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <h1 class="footer__title">Связь</h1>
+            <div class="footer__container__box">
+                <a href="#" class="footer__box-link"><img src="./src/assets/image/icons8-vk-circled-64.png" alt=""></a>
+                <a href="#" class="footer__box-link"><img src="./src/assets/image/icons8-instagram-64.png" alt=""></a>
+                <a href="#" class="footer__box-link"><img src="./src/assets/image/icons8-github-64.png" alt=""></a>
+                <a href="#" class="footer__box-link"><img src="./src/assets/image/icons8-telegram-app-64.png" alt=""></a>
             </div>
         </div>
-    </div>
-      <!-- stop section footer -->
+    </footer>
+    <!-- stop section footer -->
 
 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./src/assets/slick/slick.min.js"></script>
     <script src="./src/assets/js/script.js"></script>
 </body>
 </html>
