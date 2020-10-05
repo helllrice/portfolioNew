@@ -13,8 +13,8 @@ $(document).ready(function(){
         arrows: true,
         slidesToScroll: 1,
         centerPadding: '0px',
-        prevArrow: '<button class="my-slider__arrow">назад</button>',
-        nextArrow: '<button class="my-slider__arrow">вперед</button>',
+        prevArrow: '<a class="my-slider__arrow"><img src="src/assets/image/back.png" class="arrow__img"></a>',
+        nextArrow: '<a class="my-slider__arrow"><img src="src/assets/image/next.png" class="arrow__img"></a>',
         adaptiveHeight: true
     });
 
@@ -28,15 +28,54 @@ $(document).ready(function(){
         </div>
         `
         $('#my-slider').slick('slickAdd', html);
-        console.log(html)
     });
+
+
+
+    function renderProgressDone(){
+        document.querySelectorAll('.progress-done').forEach(function(progress){
+            setTimeout(() => {
+                progress.style.width = progress.getAttribute('data-done') + '%';
+                progress.style.opacity = 1;
+            }, 500);
+        });
+    }
+    
+    
+    
+    (function() {
+        let count = 0;
+        var skills = document.getElementById('skills');
+    
+        var onScroll = function() {
+            var bottom = document.documentElement.scrollTop +  document.documentElement.clientHeight;
+            var skillsBottom = skills.offsetTop + skills.offsetHeight;
+            if(count == 0 && bottom >= skillsBottom){
+                count++;
+                renderProgressDone();
+            }
+        } 
+    
+        var scroll = function(){
+            onScroll();
+            window.onscroll = onScroll;
+        }
+        
+        scroll();
+    })()
 })
 
 
-const progress = document.querySelector('.progress-done');
 
 
-setTimeout(() => {
-    progress.style.width = progress.getAttribute('data-done') + '%';
-    progress.style.opacity = 1;
-}, 500);
+
+
+
+
+
+
+
+
+
+
+
