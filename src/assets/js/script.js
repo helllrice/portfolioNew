@@ -23,7 +23,7 @@ $(document).ready(function(){
         <div class="my-slider__item">
             <img src="${ item } " alt="" class="my-slider__img">
             <div class="my-slider__hidden">
-                <a href="#">подробнее</a>
+                <a href="#" class="slider-link">подробнее</a>
             </div>
         </div>
         `
