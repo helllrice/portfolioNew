@@ -205,7 +205,7 @@ body {
 
 .services__container__box {
     width:  500px;
-    height: 500px;
+    height: 450px;
     margin: 0 auto;
     border: 1px solid #B82AC6;
     display: flex;
@@ -219,7 +219,7 @@ body {
 
 .input__name {
     width: 400px;
-    height: 30px;
+    height: 40px;
     padding: 10px;
     border-radius: 6px;
     border: 1px solid black;
@@ -231,7 +231,7 @@ body {
 
 .input__mail {
     width: 400px;
-    height: 30px;
+    height: 40px;
     padding: 10px;
     border-radius: 6px;
     border: 1px solid black;
@@ -239,28 +239,27 @@ body {
 
 .textarea__service {
     width: 400px;
-    height: 200px;
+    height: 150px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 6px;
+    resize: none;
 }
 
 .service__btn {
-    border: 2px solid white;
+    border: 2px solid #fff;
     font-size: 18px;
     text-decoration: none;
+    background-color: #B82AC6;
     color: #ffffff;
     border-radius: 6px;
-    padding: 0px 15px 0px 15px;
+    padding: 5px 10px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
 }
 
-.service__btn:hover{
-    background-color: #ffffff;
-    color: #B82AC6;
-    transition: 0.4s;
-    border: 2px solid black;
-}
 /* stop section services */
 
 /* start section footer */
@@ -287,7 +286,7 @@ body {
 /* stop section footer */
 
 .my-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -313,6 +312,7 @@ body {
     outline: none !important;
     position: relative;
     padding: 0 !important;
+    flex-wrap: wrap;
 }
 
 .my-slider__img {
@@ -367,6 +367,42 @@ body {
     color: #B82AC6;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.block {
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.4);
+    background-color: #141414;
+
+}
+
+.my-container__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.block {
+    display: flex;
+    width: 1000px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.my-work__picture {
+    margin-left: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-image: url("../image/activ.jpg");
+    background-position: center center;
+    background-size: cover;
 }
 
 /* stop section my-slider */

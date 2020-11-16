@@ -23,7 +23,7 @@ $(document).ready(function(){
         <div class="my-slider__item">
             <img src="${ item } " alt="" class="my-slider__img">
             <div class="my-slider__hidden">
-                <a href="#" class="slider-link">подробнее</a>
+                <a href="#my-work" class="slider-link" onclick="NewBlock()">подробнее</a>
             </div>
         </div>
         `
@@ -64,6 +64,25 @@ $(document).ready(function(){
         scroll();
     })()
 })
+
+function NewBlock() {
+    removeById('test')
+    let block = document.createElement('div')
+
+    block.classList.add('block')
+    block.setAttribute('id', 'test')
+    block.innerHTML = '<div class="my-work__picture"></div>';
+    document.getElementById('my-container__item').appendChild(block)
+ }
+
+
+ function removeById(id) {
+    const elem = document.getElementById(id)
+    if(elem != null){
+        elem.parentNode.removeChild(elem);
+    }
+ }
+
 
 
 
