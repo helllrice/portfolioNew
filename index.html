@@ -12,39 +12,48 @@
 
     <!-- start section header -->
         <header class="header">
-            <div class="header__container">
-                <div class="header__container__box">
-                    <div class="header__box__item"><a href="#about" class="header__item-link">Профайл</a></div>
-                    <div class="header__box__item"><a href="#skills" class="header__item-link">Навыки</a></div>
-                    <div class="header__box__item"><a href="#services" class="header__item-link">Услуги</a></div>
-                    <div class="header__box__item"><a href="#footer" class="header__item-link">Связь</a></div>
+            <div class="header__container container">
+                <div class="header__box">
+                    <div class="header__box-item">
+                        <a class="header__link" href="#about">Профайл</a>
+                    </div>
+                    <div class="header__box-item">
+                        <a class="header__link" href="#skills">Навыки</a>
+                    </div>
+                    <div class="header__box-item">
+                        <a class="header__link" href="#services">Услуги</a>
+                    </div>
+                    <div class="header__box-item">
+                        <a class="header__link" href="#footer">Связь</a>
+                    </div>
                 </div>
-                <div class="header__container__text">
-                    <p class="container__text__p">Василий Елкин.</p>
-                    <p class="container__text__p">Frontend-Разработчик.</p>
+                <div class="header__text">
+                    <p class="header__text-profile">Василий Елкин.</p>
+                    <p class="header__text-profile">Frontend-Разработчик.</p>
                 </div>
             </div>
         </header>
     <!-- stop section header -->
 
     <!-- start section about -->
-    <div id="about">
-        <div class="about__container">
-            <h1 class="about__title">О себе</h1>
-            <div class="about__container__box">
-                <div class="about__box__item">
+    <div class="about" id="about">
+        <div class="about__container container">
+            <h1 class="about__title title">О себе</h1>
+            <div class="about__box">
+                <div class="about__box-item">
                     <img src="./src/assets/image/WvozHiaF9UQ.jpg" alt="" class="about__img">
                 </div>
-                <div class="about__box__item">
-                    <h2 class="about__box__title">Frontend-Разработчик</h2>
+                <div class="about__box-item">
+                    <h2 class="about__box-title">Frontend-Разработчик</h2>
                     <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minus dolorum deserun          
                     </p>
                     <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minus dolorum deserun Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, quisquam asperiores non recusandae doloribus culpa       
                     </p>
                     <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minus dolorum deserun Lorem      
                     </p>
-                    <br>
-                    <a href="#my-work" class="about__container__link">МОИ РАБОТЫ</a>
+                    <div class="about__item">
+                        <a href="#work" class="about__link">МОИ РАБОТЫ</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,34 +61,34 @@
     <!-- stop section about -->
 
     <!-- start section skills -->
-    <div id="skills">
-        <div class="skills__container">
-            <h1 class="about__title">Навыки</h1>
-            <div class="skills__container__box">
-                <div class="skills__box__item">
+    <div class="skills" id="skills">
+        <div class="skills__container container">
+            <h1 class="skills__title title">Навыки</h1>
+            <div class="skills__box">
+                <div class="skills__box-item">
                     <img src="./src/assets/image/html5.png" alt="" class="skills-img">
-                    <p class="slills__box__title">Html5</p>
+                    <p class="slills__box-title">html5</p>
                     <div class="progress-bar">
                         <div class="progress-done" data-done='80' >80%</div>
                     </div>
                 </div>
-                <div class="skills__box__item">
+                <div class="skills__box-item">
                     <img src="./src/assets/image/css-3.png" alt="" class="skills-img">
-                    <p class="slills__box__title">css3</p>
+                    <p class="slills__box-title">css3</p>
                     <div class="progress-bar">
                         <div class="progress-done" data-done='65'>65%</div>
                     </div>
                 </div> 
-                <div class="skills__box__item">
+                <div class="skills__box-item">
                     <img src="./src/assets/image/js-file.png" alt="" class="skills-img">
-                    <p class="slills__box__title">JavaScript</p>
+                    <p class="slills__box-title">javascript</p>
                     <div class="progress-bar">
                         <div class="progress-done" data-done='85'>85%</div>
                     </div>
                 </div> 
-                <div class="skills__box__item">
+                <div class="skills__box-item">
                     <img src="./src/assets/image/bootstrap.png" alt="" class="skills-img">
-                    <p class="slills__box__title">Bootstrap4</p>
+                    <p class="slills__box-title">bootstrap4</p>
                     <div class="progress-bar">
                         <div class="progress-done" data-done='100'>100%</div>
                     </div>
@@ -90,9 +99,9 @@
     <!-- stop section skills -->
 
     <!-- start section my-work -->
-    <div id="my-work">
-        <div class="my-work__container">
-            <h1 class="about__title">Мои работы</h1>
+    <div class="work" id="work">
+        <div class="work__container container">
+            <h1 class="work__title title">Мои работы</h1>
             <div class="my-container__item" id="my-container__item">
             </div>
             <div class="my-container" id="my-container">
@@ -104,30 +113,30 @@
         
 
     <!-- start section services -->
-    <div id="services">
-        <h1 class="about__title">Услуги</h1>
-        <div class="services__container">
-            <div class="services__container__box">
-                <div class="serices__box__item">
+    <div class="services" id="services">
+        <h1 class="services__title title">Услуги</h1>
+        <div class="services__container container">
+            <div class="services__box">
+                <div class="serices__box-item">
                     <input type="text" placeholder="Ваше имя..." class="input__name">
                 </div>
-                <div class="serices__box__item">
+                <div class="serices__box-item">
                     <input type="text" placeholder="Ваше e-mail..." class="input__mail">
                 </div>
-                <div class="serices__box__item">
+                <div class="serices__box-item">
                     <textarea class="textarea__service" placeholder="Ваше сообщение..."></textarea>
                 </div>
-                <button class="service__btn">Заказать</button>
+                <button class="service__btn" type="submit">Заказать</button>
             </div>
         </div>
     </div>
     <!-- stop section services -->
 
     <!-- start section footer -->
-    <footer id="footer">
-        <div class="footer__container">
-            <h1 class="footer__title">Связь</h1>
-            <div class="footer__container__box">
+    <footer class="footer" id="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title title">Связь</h1>
+            <div class="footer__box">
                 <a href="#" class="footer__box-link"><img src="./src/assets/image/icons8-vk-circled-64.png" alt=""></a>
                 <a href="#" class="footer__box-link"><img src="./src/assets/image/icons8-instagram-64.png" alt=""></a>
                 <a href="#" class="footer__box-link"><img src="./src/assets/image/icons8-github-64.png" alt=""></a>
